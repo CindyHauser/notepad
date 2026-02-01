@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notizblock</title>
+
+    <link rel="shortcut icon" href="./assets/icons/paperclip.svg" type="image/x-icon">
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./styles/standard.css">
+
+    <script src="./scripts/templates.js"></script> <!--muss vor scripts.js, da es zuerst ausgeführt werden muss-->
+    <script src="./script.js"></script>
+
+</head>
+
+<body onload="renderNotes()">
+    <header>
+        <h2>Der Notizblock</h2>
+    </header>
+
+    <main class="main_content">
+        <h1>Notizblock</h1>
+        <br>
+
+        <label for="note_input">To-Do:</label>
+        <input id="note_input" type="text" required placeholder="geb die Aufgabe ein...">
+        <br>
+
+        <label for="addition_input">Beschreibung:</label>
+        <input id="addition_input" type="text" placeholder="Aufgabenbeschreibung...">
+        <br>
+        <button class="save_button" onclick="addNote()">Notiz speichern</button>
+        <br>
+
+        <section class="notes_trash">
+            <div>
+                <h2>Notizen:</h2>
+                <div id="content"></div>
+            </div>
+            <br>
+
+            <div>
+                <h2>Papierkorb:</h2>
+                <div id="trash_content"></div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Cindy Hauser</p>
+        <a href="mailto: cindy.hauser24@gmx.de">cindy.hauser24@gmx.de</a>
+    </footer>
+
+</body>
+
+</html>

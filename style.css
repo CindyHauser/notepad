@@ -1,0 +1,104 @@
+@font-face {
+    font-family: Pacifico-Regular;
+    src: url(./fonts/Pacifico-Regular.ttf);
+}
+
+@font-face {
+    font-family: DancingScript-Regular;
+    src: url(./fonts/DancingScript-Regular.ttf);
+}
+
+body {
+    font-family: DancingScript-Regular;
+}
+
+header {
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    color: antiquewhite;
+    /* box-shadow: 0 10px 0px rgba(179, 51, 51, 0.4); */
+}
+
+header h2 {
+    font-size: 30px;
+    margin: 0;
+}
+
+.main_content {
+    background-image: linear-gradient(rgba(0,0,0,0.3)), url(./assets/img/background.jpg);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    flex: 1;
+    background-color: antiquewhite;
+    color: antiquewhite;
+    padding-inline: 20px;
+}
+
+h1 {
+    font-size: 50px;
+    margin-top: 70px;
+    margin-bottom: 30px;
+}
+
+.save_button {
+    background-color: black;
+    color: white;
+    font-family: Pacifico-Regular;
+    cursor: pointer;
+    margin-bottom: 15px;
+}
+
+.save_button:hover {
+    border: 2px solid rgb(83, 82, 82);
+}
+
+h2 {
+    font-size: 25px;
+    margin-bottom: 10px;
+}
+
+.trash_button {
+    background: transparent;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+}
+
+.trash_button img {
+    display: block;
+}
+
+.notes_trash{
+    display: flex;
+    justify-content: space-around;
+    gap: 25px;
+}
+
+.note_text {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+    height: 80px;
+    background-color: black;
+    color: antiquewhite;
+    font-size: 14px;
+}
+
+footer a {
+    color: antiquewhite;
+    font-size: 12px;
+}

@@ -1,0 +1,41 @@
+Notiz zu JSON:
+
+Valides JSON wird immer mit doppelten 
+!Quotes! gelesen (um mit einer Datenbank zu kommunizieren)!
+
+In JSON, values must be one of the following data types:
+
+-a string
+-a number
+-an object
+-an array
+-a boolean
+-null
+
+In JavaScript values can be all of the above, plus any other valid JavaScript expression, including:
+
+-a function
+-a date
+-undefined
+
+
+
+slice and splice 
+Unterschied der Beiden
+
+splice:
+Die splice()-Methode in JavaScript wird verwendet, 
+um den Inhalt eines Arrays zu verändern, indem vorhandene 
+Elemente entfernt oder ersetzt und/oder neue Elemente an 
+derselben Stelle hinzugefügt werden, wodurch das 
+ursprüngliche Array modifiziert wird.
+
+slice:
+Die slice()-Methode in JavaScript extrahiert einen 
+Abschnitt eines Arrays und gibt ein neues Array zurück, 
+das die ausgewählten Elemente enthält, ohne das 
+ursprüngliche Array zu verändern.
+
+
+
+scripte nie länger als 400 Zeilen!
